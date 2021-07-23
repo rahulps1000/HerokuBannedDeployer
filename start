@@ -1,0 +1,10 @@
+#!/bin/bash
+
+apt update && apt upgrade -y
+apt install git -y
+pip3 install -U pip
+cd /
+git clone $REPO_URL Github_Repo
+cd Github_Repo
+pip3 install -U -r requirements.txt
+python3 $PYTHON_FILE
