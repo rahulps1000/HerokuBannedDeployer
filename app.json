@@ -1,0 +1,39 @@
+{
+  "name": "HerokuBannedDeployer",
+  "description": "With this you can deploy repos that are banned/blacklisted by heroku",
+  "keywords": [
+    "telegram",
+    "open",
+    "source",
+    "multi",
+    "purpose",
+    "remote",
+    "deployer"
+  ],
+  "env": {
+    "OTHER_INSTALLS": {
+      "description": "If you need install packages for running your app(Python is pre-installed).[Space in between each package]",
+      "value": "None",
+      "required": false
+    },
+    "REPO_URL": {
+      "description": "URL of the REPO that you want to deploy.",
+      "value": ""
+    },
+    "PYTHON_FILE": {
+      "description": "Name of the python file that you need to run. [use -m if you need to run __main__.py from a folder]",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
