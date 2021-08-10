@@ -5,6 +5,11 @@ _other_installs () {
    then
     apt install $OTHER_INSTALLS -y
    fi
+_externals () {
+   if [[ $OTHER_CMD != "None" ]]
+   then
+      $OTHER_CMD
+   fi
     
 apt update && apt upgrade -y
 apt install git -y
@@ -14,4 +19,5 @@ cd /
 git clone $REPO_URL Github_Repo
 cd Github_Repo
 pip3 install -U -r requirements.txt
+_externals
 python3 $PYTHON_FILE
