@@ -5,11 +5,13 @@ _other_installs () {
    then
     apt install $OTHER_INSTALLS -y
    fi
+   }
 _externals () {
    if [[ $OTHER_CMD != "None" ]]
    then
       $OTHER_CMD
    fi
+   }
     
 apt update && apt upgrade -y
 apt install git -y
