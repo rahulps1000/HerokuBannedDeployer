@@ -28,7 +28,7 @@
       "description": "If you need to run any bash command other than python specify here",
       "value": "None",
       "required": false
-    },
+    }
   },
   "addons": [
   ],
