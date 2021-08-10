@@ -23,7 +23,12 @@
     "PYTHON_FILE": {
       "description": "Name of the python file that you need to run. [use -m if you need to run __main__.py from a folder]",
       "value": ""
-    }
+    },
+     "OTHER_CMD": {
+      "description": "If you need to run any bash command other than python specify here",
+      "value": "None",
+      "required": false
+    },
   },
   "addons": [
   ],
