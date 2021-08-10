@@ -21,4 +21,4 @@ git clone $REPO_URL Github_Repo
 cd Github_Repo
 pip3 install -U -r requirements.txt
 _externals
-python3 $PYTHON_FILE
+python $PYTHON_FILE
